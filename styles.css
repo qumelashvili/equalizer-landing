@@ -1,0 +1,250 @@
+/* GLOBAL styles! */
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  #F2F2F2;
+    background-image: url('./assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: -250px;
+}
+nav, header{
+    padding: 39px 24px;
+}
+/* LOCAL styles! */
+
+/* mobile VERSION!!! */
+header h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+header p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+}
+main{
+    display: grid;
+    grid-template-rows:500px 100px 400px;
+    margin-top: 100px;
+}
+.grid-item{
+    border-radius: 12px;
+}
+.grid-item1{
+    background-color: #191826;
+    background-image: url('./assets/bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.grid-item1 img{
+    width: 208px;
+    height: 430px;
+    margin-top: -100px;
+}
+.grid-item2{
+    background-color: #FA7453;
+    grid-row: 2/4;
+    margin-top: -70px;
+    color: white;
+    padding: 48px 37px 48px 37px;
+}
+.grid-item2 p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #FCFAF9;
+    margin-top: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 36px;
+}
+.price p{
+    font-size: 65px;
+    margin: 0px;
+    font-weight: 700;
+}
+.price span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.button-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button-area button{
+    width: 97%;
+    height: 60px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.button-area img{
+    margin-right: 10px;
+}
+.btn-ios{
+    color: #FCFAF9;
+    background-color: #191826;
+}
+.btn-android{
+    color: #191826;
+    background-color: #FCFAF9;
+}
+footer{
+    padding: 63px 24px 80px 24px;
+}
+footer p{
+    line-height: 26px;
+    margin-top: 20px;
+}
+footer .icons{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.icons img{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* BREAKPOINT start min 768px */
+@media screen and (min-width: 768px){
+    nav,header{
+        padding: 0px;
+    }
+    body{
+        padding: 33px;
+        background-image: url('./assets/bg-main-tablet.png');
+        background-position-x: -400px;
+        overflow-x: hidden;
+    }
+    header{
+        margin-top: 50px;
+        padding-right: 250px;
+    }
+    header h1{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    header img{
+        content: url('./assets/bg-pattern-1.svg');
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        width: 270px;
+    }
+    main{
+        grid-template-rows: none;
+        margin-top: 240px;
+    }
+    .grid-item1{
+        justify-content: flex-start;
+        background-position-y: -10px;
+        background-position-x: 200px;
+        background-size: 200px;
+        height: 600px;
+    }
+    .grid-item1 img{
+        margin-left: 64px;
+    }
+    .grid-item2{
+        width: 326px;
+        position: absolute;
+        right: 100px;
+        margin-top: 150px;
+    }
+    footer{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+/* second BREAKPOINT min 1440px */
+@media screen and (min-width: 1440px){
+    body{
+        padding: 33px 165px 33px 165px;
+        background-image: url('./assets/bg-main-desktop.png');
+    }
+    header{
+        margin-top: 100px;
+        padding-right: 200px;
+    }
+    header img{
+        right: 0px;
+    }
+    header h1{
+        font-size: 88px;
+        line-height: 88px;
+    }
+    header p{
+        font-size: 20px;
+    }
+    .grid-item2{
+        right: 300px;
+    }
+    .grid-item1{
+        background-size: auto;
+        background-position-x: 350px;
+    }
+    .grid-item1 img{
+        width: 300px;
+        height: 600px;
+        margin-left: 130px;
+    }
+    footer p{
+        margin: 0px;
+        margin-left: 50px;
+    }
+    footer div{
+        display: flex;
+        align-items: flex-start;
+    }
+    footer img{
+        width: 146px;
+        height: 32px;
+    }
+}
+
+/* HOVER for ACTIVE use */
+.btn-ios:hover{
+    background-color: #66E2DC;
+    transition: 0.5s;
+}
+.btn-android:hover{
+    background-color: #FFB964;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+        
+    
+    
+
+
+
